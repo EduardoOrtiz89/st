@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrains Mono:pixelsize=22:antialias=true:autohint=true";
+static char *font = "DankMono NF:pixelsize=22:antialias=true:autohint=true";
 static int borderpx = 20;
 
 /*
@@ -56,7 +56,7 @@ static unsigned int blinktimeout = 800;
 /*
  * thickness of underline and bar cursors
  */
-static unsigned int cursorthickness = 2;
+static unsigned int cursorthickness = 3;
 
 /*
  * bell volume. It must be a value between -100 and 100. Use 0 for disabling
@@ -82,12 +82,34 @@ char *termname = "st-256color";
  *
  *	stty tabs
  */
-unsigned int tabspaces = 8;
+unsigned int tabspaces = 4;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 
+  //light
 	/* 8 normal colors */
+	/* "#fbf1c7", /1* black   *1/ */
+	/* "#cc241d", /1* red     *1/ */
+	/* "#98971a", /1* green   *1/ */
+	/* "#d79921", /1* yellow  *1/ */
+	/* "#458588", /1* blue    *1/ */
+	/* "#b16286", /1* magenta *1/ */
+	/* "#689d6a", /1* cyan    *1/ */
+	/* "#7c6f64", /1* white   *1/ */
+
+	/* /1* 8 bright colors *1/ */
+	/* "#928374", /1* black   *1/ */
+	/* "#9d0006", /1* red     *1/ */
+	/* "#79740e", /1* green   *1/ */
+	/* "#b57614", /1* yellow  *1/ */
+	/* "#076678", /1* blue    *1/ */
+	/* "#8f3f71", /1* magenta *1/ */
+	/* "#427b58", /1* cyan    *1/ */
+	/* "#3c3836", /1* white   *1/ */
+  
+  //dark
+/* /1* 8 normal colors *1/ */
 	"#1d2021", /* black   */
 	"#cc241d", /* red     */
 	"#98971a", /* green   */
@@ -127,7 +149,7 @@ static unsigned int defaultrcs = 257;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 2;
+static unsigned int cursorshape = 6;
 
 /*
  * Default columns and rows numbers
@@ -140,7 +162,7 @@ static unsigned int rows = 24;
  * Default colour and shape of the mouse cursor
  */
 static unsigned int mouseshape = XC_xterm;
-static unsigned int mousefg = 7;
+static unsigned int mousefg = 1;
 static unsigned int mousebg = 0;
 
 /*
