@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "DankMono NF:pixelsize=22:antialias=true:autohint=true";
+static char *font = "DankMono NF:pixelsize=24:antialias=true:autohint=true";
 static int borderpx = 20;
 
 /*
@@ -246,6 +246,9 @@ static Shortcut shortcuts[] = {
  * to be mapped below, add them to this array.
  */
 static KeySym mappedkeys[] = { -1 };
+/* frames per second st should at maximum draw to the screen */
+static unsigned int xfps = 60;
+static unsigned int actionfps = 60;
 
 /*
  * State bits to ignore when matching key or button events.  By default,
