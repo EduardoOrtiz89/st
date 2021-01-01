@@ -127,7 +127,7 @@ static const char *colorname[] = {
   
   //dark
 /* /1* 8 normal colors *1/ */
-	"#1d2021", /* black   */
+	"#282828", /* black   */
 	"#cc241d", /* red     */
 	"#98971a", /* green   */
 	"#d79921", /* yellow  */
@@ -175,7 +175,7 @@ static const char *colorname[] = {
 	/* "#d8dee9", /1* foreground *1/ */
    [255] = 0,
    "#cccccc",
--	"#555555",
+	"#555555",
 };
 
 
